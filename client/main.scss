@@ -1,0 +1,96 @@
+/* CSS declarations go here */
+// If you want to override materialize sass variables you can uncomment the following:
+// @import "{poetic:materialize-scss}/sass/components/_color.scss";
+// $primary-color: color("blue", "lighten-2");
+
+// import main scss file
+@import "{poetic:materialize-scss}/sass/materialize.scss";
+
+$color-weather-background: #5F9EA0;
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0,0,0,0;
+    padding: 0;
+    top: 0;
+    height:100%;
+    width:100%;
+}
+
+.row {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding:0;
+    background-color: #DDDDDD;
+}
+
+.row-bottom {
+    height: 40%;
+}
+
+.row-top {
+    height: 60%;
+}
+
+.col {
+    height: 100%;
+}
+
+.weather {
+    height: 100%;
+    padding: 0 !important; 
+    .row:nth-child(0n+1){
+            height:18%;
+    }
+    .row:nth-child(0n+2){
+            height:52%;
+    }
+    .row:nth-child(0n+3){
+            height:30%;
+    }
+    .row {
+        background-color: $color-weather-background;
+    }
+}
+
+
+.time {
+    height: 100%;
+}
+
+.humidity {
+    position: relative;
+    color: #F0F0F0;
+    font-size: 40pt;
+    text-align: right;
+}
+
+.condition {
+    position: relative;
+    color: #F0F0F0;
+    font-size: 30pt;
+    text-align:left;
+}
+
+.temperature {
+    position: relative;
+    color: #F0F0F0;
+    font-size: 40pt;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+    text-align: inherit;
+}
+
+.calender {
+    background-color: bisque;
+}
+
+.twitter {
+    background-color: #D4D4D4;
+}

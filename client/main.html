@@ -1,0 +1,42 @@
+<head>
+  <meta charset="utf-8">
+
+  <title>SpeedyHome</title>
+  <meta name="description" content="SpeedyHome">
+  <meta name="author" content="CharleySkyeMicu">
+
+  <link rel="stylesheet" type="text/css" href="node_modules/materialize-css/sass/materialize.scss"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+    
+    
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+</body>
+
+<template name="temperature">
+    {{#each temperature}}
+        {{text}}&deg;C
+    {{/each}}
+</template>
+
+<template name="condition">
+    {{#each text}}
+        {{condition}}
+    {{/each}}
+</template>
+
+<template name="humidity">
+    {{#each text}}
+        {{humidity}}&#37;
+    {{/each}}
+</template>
+
+<template name="time">
+    
+</template>
