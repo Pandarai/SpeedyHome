@@ -12,8 +12,40 @@
 </head>
 
 <body>
-    
-    
+    <section class="row row-top">
+        <section class="col s3 weather">
+            <section class="row">
+                <section class="col s12 condition">
+                        {{> condition}}
+                </section>
+            </section>
+            <section class="row">
+                <section class="col s1"></section>
+                    <section class="col s10 time">
+                        {{> time}}
+                    </section>
+                <section class="col s1"></section>
+            </section>
+            <section class="row">
+                <section class="col s6 temperature">
+                    <section class="absolute">
+                        {{> temperature}}
+                    </section>
+                </section>
+                <section class="col s6 humidity">
+                    <section class="absolute" style="text-align:right; right:0.75rem;">
+                        {{> humidity}}
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="col s9 calender">news</section>
+    </section>
+    <section class="row row-bottom">
+        <section class="col s9">other</section>
+        <section class="col s3 twitter">twitter</section>        
+    </section>
+
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
